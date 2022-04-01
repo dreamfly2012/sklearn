@@ -4,3 +4,9 @@ matplotlib
 numpy
 pydotplus
 graphviz 
+nltk
+gensim
+pattern
+Pyaudio
+SpeechRecognition
+google-api-python-client

@@ -1,5 +1,4 @@
 import pydotplus
-import pydot_ng as pydot
 from sklearn import tree
 from sklearn.datasets import load_iris
 from sklearn.metrics import classification_report
@@ -24,7 +23,7 @@ print(prediction)
 
 dot_data = tree.export_graphviz(clf,feature_names = data_feature_names,
             out_file = None,filled = True,rounded = True)
-graph = pydot.graph_from_dot_data(dot_data)
+graph = pydotplus.graph_from_dot_data(dot_data)
 colors = ('orange', 'yellow')
 edges = collections.defaultdict(list)
 
